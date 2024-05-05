@@ -1,7 +1,7 @@
 # Allegro Hand ZMQ Interface
 Adapted from https://github.com/simlabrobotics/allegro_hand_linux_v4
 
-This interface allows communicating with a v4 Allegro hand via ZMQ.
+This interface allows communicating with a v4 Allegro hand via ZMQ on the NUC of franka arm.
 
 # Required hardware
 1. [Allegro hand v4](http://wiki.wonikrobotics.com/AllegroHandWiki/index.php/Allegro_Hand_v4.0)
