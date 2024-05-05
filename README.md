@@ -52,7 +52,7 @@ sudo ldconfig
 ## Installing this interface
 Build using cmake "out of source build" style.
 ```bash
-cd allegro_hand_linux
+cd allegro_zmq
 mkdir build && cd build
 cmake ..
 make
@@ -61,9 +61,9 @@ make install
 
 # Usage
 ## Launching the interface
-1. Connect PCAN-USB and Allegro Hand (make sure to power off Allegro Hand)
-1. Start the grasping program: "grasp": `bin/grasp`
-1. Power on the Allegro Hand. The motors should actuate and the hand should return to the home configuration.
+1. Connect PCAN-USB and Allegro Hand (connect to the NUC of franka robot)
+1. Power on the Allegro Hand.
+1. Start the grasping program: "grasp": `build/bin/grasp` on the NUC. You should see the configuration of your hand print out.
 
 ## Controlling via ZMQ
-Please refer to [dex_grasp_nuc](https://github.com/wualbert/dex_grasp_nuc/blob/master/scripts/zmq_allegro_client_test.py) for usage examples.
+`ws_control.py` is an example code running on workstation with python. Make sure you replace the `localhost` with the correct IP address of the NUC in this code.
