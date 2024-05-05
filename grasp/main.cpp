@@ -283,7 +283,7 @@ void MainLoop()
 
         double kp[] = {700, 800, 900, 500, 700, 800, 900, 500, 700, 800, 900, 500, 700, 800, 900, 500};
         double kd[] = {28, 50, 55, 40, 28, 50, 55, 40, 28, 50, 55, 40, 28, 50, 55, 40};
-	    pBHand->SetGainsEx(kp, kd);
+        pBHand->SetGainsEx(kp, kd);
 
         SetTargetQ(vect);
         // std::string succ_str="succ";
